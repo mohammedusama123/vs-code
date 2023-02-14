@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 4px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+     .flex-container{
+         background-color: aliceblue;
+         display: flex;
+         flex-direction: center;
+         align-content: space-between;
+         flex-flow:column;
+
+     }
+     .flex-box{
+        width: 35px;
+        height: 50px;
+        padding: 2px;
+        flex-direction: row;
+        flex-grow: 2;
+        border: 2px solid rgb(19, 19, 105);
+        align-items: center;
+        font-weight: bold;
+
+     }
+     #flex-box1{
+        background-color: aqua;
+     }
+     #flex-box2{
+        order:5;
+        background-color: aquamarine;
+     }
+     #flex-box3{
+        flex-grow: 5;
+        background-color: burlywood;
+     }
+     #flex-box4{
+        background-color: bisque;
+     }
+     #flex-box5{
+        flex-shrink: 5;
+        background-color: blanchedalmond;
+     }
+
+    </style>
+    <title>Flex Boxes</title>
+    <div class="flex-container">
+    <div class ="flex-box" id="flex-box1">Box1</div>
+    <div class ="flex-box" id="flex-box2">Box2</div>
+    <div class ="flex-box" id="flex-box3">Box3</div>
+    <div class ="flex-box" id="flex-box4">Box4</div>
+    <div class ="flex-box" id="flex-box5">Box5</div>
+</div>
+</head>
+<body>
+    
+</body>
+</html>
